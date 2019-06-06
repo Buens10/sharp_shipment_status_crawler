@@ -8,11 +8,22 @@
 #     https://doc.scrapy.org/en/latest/topics/settings.html
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+from scrapy.exporters import JsonItemExporter
+
+
+class MyJsonLinesItemExporter(JsonItemExporter):
+    def __init__(self, spider, **kwargs):
+        super(MyJsonLinesItemExporter, self).__init__(spider, ensure_ascii=False, **kwargs)
+
+
+FEED_EXPORTERS = {
+    'json': 'dsCrawler.exporters.Utf8JsonItemExporter',
+}
 
 BOT_NAME = 'dsCrawler'
 
 SPIDER_MODULES = ['dsCrawler.spiders']
-NEWSPIDER_MODULE = 'dsCrawler.spiders'
+NEWSPIDER_MODULE = ['dsCrawler.spiders']
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -27,7 +38,8 @@ ROBOTSTXT_OBEY = True
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-#DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = .25
+RANDOMIZE_DOWNLOAD_DELAY = True
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -49,6 +61,20 @@ ROBOTSTXT_OBEY = True
 #SPIDER_MIDDLEWARES = {
 #    'dsCrawler.middlewares.DscrawlerSpiderMiddleware': 543,
 #}
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_splash.SplashCookiesMiddleware': 723,
+    'scrapy_splash.SplashMiddleware': 725,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+}
+
+SPLASH_URL = 'http://localhost:8050/'
+
+SPIDER_MIDDLEWARES = {
+    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+}
+
+DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
@@ -64,9 +90,16 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'dsCrawler.pipelines.DscrawlerPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'dsCrawler.pipelines.ShipmentEventsPipeline': 300,
+}
+MONGO_URI = 'mongodb://localhost:27017'
+MONGODB_SERVER = 'localhost'
+MONGODB_PORT = 27017
+MONGODB_DB = "ds_shipment_tracking"
+MONGODB_1_COLLECTION = "shipment_numbers"
+MONGODB_2_COLLECTION = "shipment_events"
+MONGODB_3_COLLECTION = "carriers"
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -88,3 +121,6 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+FEED_EXPORT_ENCODING = "utf-8"
+
+

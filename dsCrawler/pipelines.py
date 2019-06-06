@@ -4,8 +4,34 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+import pymongo
+import logging
+from dsCrawler import settings
 
 
-class DscrawlerPipeline(object):
-    def process_item(self, item, spider):
+class ShipmentEventsPipeline(object):
+
+    collection_name = 'shipment_events'
+
+    def __init__(self, mongo_uri, mongo_db):
+        self.mongo_uri = mongo_uri
+        self.mongo_db = mongo_db
+
+    @classmethod
+    def from_crawler(cls, dsCrawler):
+        return cls(
+            mongo_uri=dsCrawler.settings.get('MONGO_URI'),
+            mongo_db=dsCrawler.settings.get('MONGO_DB', 'dsCrawler')
+        )
+
+    def open_spider(self, dsSpider):
+        self.client = pymongo.MongoClient(self.mongo_uri)
+        self.db = self.client[self.mongo_db]
+
+    def close_spider(self, dsSpider):
+        self.client.close()
+
+    def process_item(self, item, dsSpider):
+        self.db[self.collection_name].insert_one(dict(item))
         return item
+

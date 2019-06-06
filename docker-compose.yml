@@ -1,0 +1,8 @@
+version: '3.5docker '
+services:
+  MongoDB:
+    build: .
+    image: "mongo:latest"
+    container_name: "dsMongoDB"
+    ports:
+      - 27017:27017
