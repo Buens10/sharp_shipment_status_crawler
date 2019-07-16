@@ -7,10 +7,14 @@
 import scrapy
 
 
-class DscrawlerItem(scrapy.Item):
+#class DscrawlerItem(scrapy.Item):
+    #pass
+
+
+class DhlcrawlerItem(scrapy.Item):
     # define the fields for your item here like:
-    carrier = scrapy.Field()
     sn = scrapy.Field()
+    crawltime = scrapy.Field()
     url = scrapy.Field()
     events = scrapy.Field()
     pass

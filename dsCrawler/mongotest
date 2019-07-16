@@ -1,0 +1,59 @@
+{'carrier': 'dhl',
+ 'events': [],
+ 'sn': '572760507969',
+ 'url': 'https://www.dhl.de/int-verfolgen/search?language=de&lang=de&domain=de&piececode=572760507969'}{'carrier': 'dhl',
+ 'events': [{'datum': '2019-03-13T17:04:00+01:00',
+             'status': 'Die Sendung wurde elektronisch angeku00FCndigt. Sobald '
+                       'die Sendung von uns bearbeitet wurde, erhalten Sie '
+                       'weitere Informationen.'},
+            {'datum': '2019-03-13T17:32:00+01:00',
+             'ort': 'Neumu00FCnster',
+             'status': 'Die Sendung wurde an DHL u00FCbergeben und wird '
+                       'fu00FCr den Weitertransport in die Region des '
+                       'Empfu00E4ngers vorbereitet.'},
+            {'datum': '2019-03-14T02:55:00+01:00',
+             'ort': 'Krefeld',
+             'status': 'Die Sendung ist in der Region des Empfu00E4ngers '
+                       'angekommen und wird im nu00E4chsten Schritt zur '
+                       'Zustellbasis transportiert.'},
+            {'datum': '2019-03-14T08:15:00+01:00',
+             'status': 'Die Sendung wurde in das Zustellfahrzeug geladen.'},
+            {'datum': '2019-03-14T11:06:00+01:00',
+             'status': 'Die Sendung wurde erfolgreich zugestellt.'}],
+ 'sn': '422845989427',
+ 'url': 'https://www.dhl.de/int-verfolgen/search?language=de&lang=de&domain=de&piececode=422845989427'}{'carrier': 'dhl',
+ 'events': [{'datum': '2019-05-13T14:50:00+02:00',
+             'status': 'Die Sendung wurde elektronisch angeku00FCndigt. Sobald '
+                       'die Sendung von uns bearbeitet wurde, erhalten Sie '
+                       'weitere Informationen.'},
+            {'datum': '2019-05-13T19:43:00+02:00',
+             'ort': 'Saulheim',
+             'status': 'Die Sendung wurde an DHL u00FCbergeben und wird '
+                       'fu00FCr den Weitertransport in die Region des '
+                       'Empfu00E4ngers vorbereitet.'},
+            {'datum': '2019-05-14T05:34:00+02:00',
+             'ort': 'Krefeld',
+             'status': 'Die Sendung ist in der Region des Empfu00E4ngers '
+                       'angekommen und wird im nu00E4chsten Schritt zur '
+                       'Zustellbasis transportiert.'},
+            {'datum': '2019-05-14T09:34:00+02:00',
+             'status': 'Die Sendung wurde in das Zustellfahrzeug geladen.'},
+            {'datum': '2019-05-14T11:47:00+02:00',
+             'status': 'Die Sendung konnte nicht zugestellt werden und wird in '
+                       'die Filiale gebracht. Fu00FCr die Abholung ist neben '
+                       'der Benachrichtigung die Vorlage Ihres Ausweises sowie '
+                       'ggf. eine Vollmacht erforderlich.'},
+            {'datum': '2019-05-14T18:15:00+02:00',
+             'status': 'Die Sendung wird zur Abholung in die <a '
+                       "href='https://psf.dhl.com/?countrycode=DEu0026address=D%C3%BCsseldorf "
+                       "H%C3%BCttenstr. 6' class='arrowLink' "
+                       "target='_blank'><span class='arrow'></span>Filiale "
+                       'Du00FCsseldorf Hu00FCttenstr. 6</a> gebracht. Fu00FCr '
+                       'die Abholung ist neben der Benachrichtigung die '
+                       'Vorlage Ihres Ausweises sowie ggf. eine Vollmacht '
+                       'erforderlich.'},
+            {'datum': '2019-05-17T13:41:00+02:00',
+             'status': 'Der Empfu00E4nger hat die Sendung in der Filiale '
+                       'abgeholt.'}],
+ 'sn': '00340434174857037035',
+ 'url': 'https://www.dhl.de/int-verfolgen/search?language=de&lang=de&domain=de&piececode=00340434174857037035'}

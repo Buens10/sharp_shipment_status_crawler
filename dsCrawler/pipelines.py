@@ -4,34 +4,53 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-import pymongo
-import logging
-from dsCrawler import settings
+from pymongo import MongoClient
+from scrapy.exceptions import DropItem
+from scrapy.conf import settings
+import dsCrawler.settings as settings
+from dsCrawler.spiders import dhlSpider
 
 
-class ShipmentEventsPipeline(object):
+class DhlShipmentEventsPipeline(object):
 
-    collection_name = 'shipment_events'
+    collection_name = 'dhl_shipment_events'
 
-    def __init__(self, mongo_uri, mongo_db):
-        self.mongo_uri = mongo_uri
+    def __init__(self, mongo_server, mongo_port, mongo_db, mongo_collection):
+        self.mongo_server = mongo_server
+        self.mongo_port = mongo_port
         self.mongo_db = mongo_db
+        self.mongo_collection = mongo_collection
+        #self.f=open('mongotest', 'w+')
 
     @classmethod
-    def from_crawler(cls, dsCrawler):
+    def from_crawler(cls, crawler):
         return cls(
-            mongo_uri=dsCrawler.settings.get('MONGO_URI'),
-            mongo_db=dsCrawler.settings.get('MONGO_DB', 'dsCrawler')
+            mongo_server=crawler.settings.get('MONGODB_SERVER'),
+            mongo_port=crawler.settings.get('MONGODB_PORT'),
+            mongo_db=crawler.settings.get('MONGODB_DB', 'dsCrawler'),
+            mongo_collection=crawler.settings.get('MONGODB_COLLECTION'),
         )
 
-    def open_spider(self, dsSpider):
-        self.client = pymongo.MongoClient(self.mongo_uri)
+    def open_spider(self, dhlSpider):
+        self.client = MongoClient(self.mongo_server, self.mongo_port)
         self.db = self.client[self.mongo_db]
 
-    def close_spider(self, dsSpider):
+    def close_spider(self, dhlSpider):
         self.client.close()
+        #self.f.close()
 
-    def process_item(self, item, dsSpider):
-        self.db[self.collection_name].insert_one(dict(item))
+    def process_item(self, item, dhlSpider):
+        #self.f.write(str(item))
+        self.db[self.mongo_collection].insert(dict(item))
         return item
+
+
+class DropIfEmptyFieldPipeline(object):
+
+    def process_item(self, item, spider):
+
+        if not(all(item.values())):
+            raise DropItem()
+        else:
+            return item
 

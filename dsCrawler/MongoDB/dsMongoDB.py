@@ -1,13 +1,11 @@
 from pprint import pprint
-from pymongo import MongoClient
-from dsCrawler.spiders import dsSpider
-from dsCrawler.spiders.dsSpider import *
-from dsCrawler import settings
+from dsCrawler.spiders.dhlSpider import *
+
 
 client = MongoClient("mongodb://localhost:27017/")
 db = client['ds_shipment_tracking']
 shipment_numbers = db['shipment_numbers']
-shipment_events = db['shipment_events']
+dhl_shipment_events = db['dhl_shipment_events']
 carriers = db['carriers']
 
 
