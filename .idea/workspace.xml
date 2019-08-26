@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57707417-f90a-4fc3-b672-313781ff0f56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dsCrawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dsCrawler.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/WiredTiger.turtle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/WiredTiger.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb/collection-4--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/collection-4--3199752207407069101.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb/collection-7--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/collection-7--3199752207407069101.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb/diagnostic.data/metrics.2019-08-26T11-03-41Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/diagnostic.data/metrics.2019-08-26T11-03-41Z-00000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb/diagnostic.data/metrics.interim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb/index-5--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/index-5--3199752207407069101.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb/index-6--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/index-6--3199752207407069101.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb/index-8--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/index-8--3199752207407069101.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb/journal/WiredTigerLog.0000000002" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/journal/WiredTigerLog.0000000002" afterDir="false" />
@@ -251,7 +248,7 @@
       <workItem from="1565359222121" duration="11750000" />
       <workItem from="1566212472429" duration="12485000" />
       <workItem from="1566487861115" duration="35000" />
-      <workItem from="1566487928183" duration="12952000" />
+      <workItem from="1566487928183" duration="13338000" />
     </task>
     <servers />
   </component>
