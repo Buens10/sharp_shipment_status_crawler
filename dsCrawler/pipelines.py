@@ -45,9 +45,22 @@ class DhlShipmentEventsPipeline(object):
         return item
 
 
-class DropIfEmptyFieldPipeline(object):
+class DuplicatesPipeline(object):
+
+    def __init__(self):
+        self.ids_seen = set()
 
     def process_item(self, item, spider):
+        if item['id'] in self.ids_seen:
+            raise DropItem("Duplicate item found: %s" % item)
+        else:
+            self.ids_seen.add(item['id'])
+            return item
+
+
+class DropIfEmptyFieldPipeline(object):
+
+    def process_item(self, item, dhlSpider):
 
         if not(all(item.values())):
             raise DropItem()
