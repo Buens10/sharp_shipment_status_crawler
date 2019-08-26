@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import math
 import scrapy
 from scrapy_splash import SplashRequest
 from dsCrawler.items import DhlcrawlerItem
@@ -28,7 +27,7 @@ class DhlSpider(scrapy.Spider):
         number = 340434174857037035
         multiplier = [3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3]
         sh_numbers = []
-        for i in range(1, 100):
+        for i in range(90000, 120000):
             sh_number = (number // 10) + i
             sh_number_list = list(map(int, str(sh_number)))
             m_number = np.multiply(multiplier, sh_number_list)
@@ -65,7 +64,7 @@ class DhlSpider(scrapy.Spider):
         #definition des gesuchten pfades
         item = DhlcrawlerItem(
             sn=shipment_details["sendungen"][0]["sendungsdetails"]["sendungsnummern"].get("sendungsnummer"),
-            crawltime=datetime.datetime.now().strftime('%Y-%m-%d %H:%M'),
+            crawltime=datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             url=response.meta["splash"]["args"].get("url"),
             events=shipment_details["sendungen"][0]["sendungsdetails"]["sendungsverlauf"].get("events", [])
         )
