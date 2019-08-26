@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57707417-f90a-4fc3-b672-313781ff0f56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dsCrawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dsCrawler.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsCrawler/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/dsCrawler/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsCrawler/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/dsCrawler/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsCrawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dsCrawler/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/collection-4--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/collection-4--3199752207407069101.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/collection-7--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/collection-7--3199752207407069101.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/diagnostic.data/metrics.2019-08-26T11-03-41Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/diagnostic.data/metrics.2019-08-26T11-03-41Z-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/diagnostic.data/metrics.interim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/index-5--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/index-5--3199752207407069101.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/index-6--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/index-6--3199752207407069101.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/index-8--3199752207407069101.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/index-8--3199752207407069101.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/journal/WiredTigerLog.0000000002" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/journal/WiredTigerLog.0000000002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/sizeStorer.wt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,172 +22,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dsCrawler/spiders/dsSpider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
-              <folding>
-                <element signature="e#24#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsCrawler/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsCrawler/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-              <folding>
-                <element signature="e#193#207#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsCrawler/MongoDB/dsMongoDB.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dsCrawler/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FavoritesManager">
+    <favorites_list name="dsCrawler" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="package.json" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$APPLICATION_CONFIG_DIR$/pycharm.vmoptions" />
-        <option value="/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/twisted/internet/reactor.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/tasks/task.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/task.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/tasks.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/spiders/__init__.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/cellery_settings.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/celeryconfig.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/tasks/__init__.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/celery.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/app/__init__.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/app/tasks.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/Dockerfile" />
-        <option value="$PROJECT_DIR$/dsCrawler/MongoDB.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/MongoDB/MongoDB.py" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/dsCrawler/MongoDB/dsMongoDB.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/spiders/package.json" />
-        <option value="$PROJECT_DIR$/aeiou.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/items.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/settings.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/pipelines.py" />
-        <option value="$PROJECT_DIR$/dsCrawler/spiders/dsSpider.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-240" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1269" />
-    <option name="height" value="1025" />
-  </component>
+  <component name="ProjectId" id="1Pmmrrij3pZZVUkgRK5bvEBj5RF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="dsCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dsCrawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dsCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="dsCrawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dsCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="dsCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dsCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="dsCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="MongoDB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dsCrawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dsCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="dsCrawler" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -192,8 +62,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dsCrawler/MongoDB" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/dsCrawler/MongoDB" />
       <recent name="$PROJECT_DIR$/dsCrawler/app" />
       <recent name="$PROJECT_DIR$/dsCrawler/tasks" />
     </key>
@@ -210,8 +80,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dsSpider">
-    <configuration name="MongoDB" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ar_plot">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="dsCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -219,36 +89,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dsCrawler/MongoDB" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsCrawler/MongoDB/dsMongoDB.py" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="aeiou" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ar_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dsCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dsCrawler" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/aeiou.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsCrawler/ar_plot.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -268,7 +135,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsCrawler/spiders/dsSpider.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsCrawler/spiders/dhlSpider.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -277,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pipelines" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dtplot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dsCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,7 +157,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsCrawler/pipelines.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsCrawler/dtplot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,12 +166,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="for_loop_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dsCrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dsCrawler" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsCrawler/for_loop_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="locationplot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dsCrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dsCrawler" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsCrawler/locationplot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ar_plot" />
+        <item itemvalue="Python.locationplot" />
         <item itemvalue="Python.dsSpider" />
-        <item itemvalue="Python.pipelines" />
-        <item itemvalue="Python.MongoDB" />
-        <item itemvalue="Python.aeiou" />
+        <item itemvalue="Python.dtplot" />
+        <item itemvalue="Python.for_loop_test" />
       </list>
     </recent_temporary>
   </component>
@@ -327,12 +239,21 @@
       <workItem from="1557513887419" duration="11756000" />
       <workItem from="1557752618123" duration="92598000" />
       <workItem from="1558692851474" duration="2418000" />
-      <workItem from="1558715903944" duration="77158000" />
+      <workItem from="1558715903944" duration="100945000" />
+      <workItem from="1559905767189" duration="37032000" />
+      <workItem from="1560434847063" duration="60035000" />
+      <workItem from="1561381936149" duration="4870000" />
+      <workItem from="1561546894531" duration="21226000" />
+      <workItem from="1562062962682" duration="822000" />
+      <workItem from="1562144631806" duration="79828000" />
+      <workItem from="1563788172736" duration="94672000" />
+      <workItem from="1565358592100" duration="427000" />
+      <workItem from="1565359222121" duration="11750000" />
+      <workItem from="1566212472429" duration="12485000" />
+      <workItem from="1566487861115" duration="35000" />
+      <workItem from="1566487928183" duration="12952000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202903000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,203 +264,73 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-240" y="-1057" width="1269" height="1025" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21108395" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49869677" visible="true" weight="0.25054947" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3611738" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295711" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295711" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.39841986" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013032" side_tool="true" weight="0.33566433" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286517" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32945284" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24934839" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/dsCrawler$aeiou.coverage" NAME="aeiou Coverage Results" MODIFIED="1557759463420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dsCrawler$MongoDB.coverage" NAME="MongoDB Coverage Results" MODIFIED="1559327692077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler/MongoDB" />
-    <SUITE FILE_PATH="coverage/dsCrawler$pipelines.coverage" NAME="pipelines Coverage Results" MODIFIED="1559760661220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler" />
-    <SUITE FILE_PATH="coverage/dsCrawler$dsSpider.coverage" NAME="dsSpider Coverage Results" MODIFIED="1559812652116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler/spiders" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/twisted/internet/reactor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/encodings/utf_8.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scrapy_splash/middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5651" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/tasks/task.py" />
-    <entry file="file://$PROJECT_DIR$/dsCrawler/tasks/tasks.py" />
-    <entry file="file://$PROJECT_DIR$/dsCrawler/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/cellery_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/app/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/celeryconfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2058" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/Dockerfile" />
-    <entry file="file://$PROJECT_DIR$/dsCrawler/docker-compose.yml" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/celery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/spiders/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aeiou.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/MongoDB/dsMongoDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding>
-            <element signature="e#193#207#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dsCrawler/spiders/dsSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
-          <folding>
-            <element signature="e#24#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hermesSpider.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hermesSpider.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hermesSpider.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="SplashRequest" language="Python" />
+        <watch expression="name" language="Python" />
+        <watch expression="name" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dsCrawler$ProcessScript.coverage" NAME="ProcessScript Coverage Results" MODIFIED="1559829748350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler" />
+    <SUITE FILE_PATH="coverage/dsCrawler$hermesSpider.coverage" NAME="hermesSpider Coverage Results" MODIFIED="1561368294522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler/spiders" />
+    <SUITE FILE_PATH="coverage/dsCrawler$MongoDB.coverage" NAME="MongoDB Coverage Results" MODIFIED="1559816994082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler/MongoDB" />
+    <SUITE FILE_PATH="coverage/dsCrawler$dsSpider.coverage" NAME="dsSpider Coverage Results" MODIFIED="1565625551557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler/spiders" />
+    <SUITE FILE_PATH="coverage/dsCrawler$dsMongoDB.coverage" NAME="dsMongoDB Coverage Results" MODIFIED="1560435572651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler/MongoDB" />
+    <SUITE FILE_PATH="coverage/dsCrawler$dtplot.coverage" NAME="dtplot Coverage Results" MODIFIED="1565006076170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler" />
+    <SUITE FILE_PATH="coverage/dsCrawler$crawler_runner.coverage" NAME="crawler_runner Coverage Results" MODIFIED="1559918941941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler" />
+    <SUITE FILE_PATH="coverage/dsCrawler$aeiou.coverage" NAME="aeiou Coverage Results" MODIFIED="1557759463420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dsCrawler$pipelines.coverage" NAME="pipelines Coverage Results" MODIFIED="1559905629391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler" />
+    <SUITE FILE_PATH="coverage/dsCrawler$scikit_learn.coverage" NAME="scikit-learn Coverage Results" MODIFIED="1562587466054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler" />
+    <SUITE FILE_PATH="coverage/dsCrawler$spider_runner.coverage" NAME="spider_runner Coverage Results" MODIFIED="1560266578645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dsCrawler" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>SplashRequest</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>name</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
 </project>
