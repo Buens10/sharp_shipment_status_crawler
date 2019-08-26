@@ -1,8 +1,3 @@
-version: '3.5docker '
-services:
-  MongoDB:
-    build: .
-    image: "mongo:latest"
-    container_name: "dsMongoDB"
-    ports:
-      - 27017:27017
+version https://git-lfs.github.com/spec/v1
+oid sha256:134f591c58a78524ce4f0260a0b348024d43d9b6973533f514fa3f2920ad1ea3
+size 145
