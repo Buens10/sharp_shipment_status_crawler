@@ -18,6 +18,8 @@ NEWSPIDER_MODULE = 'dsCrawler.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'dsCrawler (+http://www.yourdomain.com)'
 
+#SCHEDULER_PRIORITY_QUEUE = 'scrapy.pqueues.DownloaderAwarePriorityQueue'
+
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
@@ -29,9 +31,17 @@ CONCURRENT_REQUESTS = 100
 # See also autothrottle settings and docs
 DOWNLOAD_DELAY = .25
 RANDOMIZE_DOWNLOAD_DELAY = True
+DOENLOAD_TIMEOUT = 15
 # The download delay setting will honor only one of:
-CONCURRENT_REQUESTS_PER_DOMAIN = 16
+CONCURRENT_REQUESTS_PER_DOMAIN = 100
 #CONCURRENT_REQUESTS_PER_IP = 16
+
+REACTOR_THREADPOOL_MAXSIZE = 20
+LOG_LEVEL = 'INFO'
+RETRY_ENABLED = False
+REDIRECT_ENABLED = False
+#AJAXCRAWL_ENABLED = True
+
 
 # Disable cookies (enabled by default)
 COOKIES_ENABLED = False
@@ -47,9 +57,9 @@ COOKIES_ENABLED = False
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'dsCrawler.middlewares.DscrawlerSpiderMiddleware': 543,
-#}
+SPIDER_MIDDLEWARES = {
+    'dsCrawler.middlewares.DscrawlerSpiderMiddleware': 543,
+}
 DOWNLOADER_MIDDLEWARES = {
     'scrapy_splash.SplashCookiesMiddleware': 723,
     'scrapy_splash.SplashMiddleware': 725,
@@ -67,9 +77,9 @@ HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'dsCrawler.middlewares.DscrawlerDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+    'dsCrawler.middlewares.DscrawlerDownloaderMiddleware': 543,
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html

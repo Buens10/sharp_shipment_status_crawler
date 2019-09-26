@@ -13,6 +13,7 @@ dhl_shipment_events = db.dhl_shipment_events
 dayt = db.dhl_shipment_events.find({}, {"events.datum": 1})
 orte = db.dhl_shipment_events.find({}, {"events.ort": 1})
 
+
 daytime_distribution = []
 for i in dayt:
     dt = i["events"]

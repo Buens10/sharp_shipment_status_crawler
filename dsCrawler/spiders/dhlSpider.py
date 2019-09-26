@@ -27,7 +27,7 @@ class DhlSpider(scrapy.Spider):
         number = 340434174857037035
         multiplier = [3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3]
         sh_numbers = []
-        for i in range(90000, 120000):
+        for i in range(40000, 50000):
             sh_number = (number // 10) + i
             sh_number_list = list(map(int, str(sh_number)))
             m_number = np.multiply(multiplier, sh_number_list)
@@ -49,7 +49,13 @@ class DhlSpider(scrapy.Spider):
     # callback wird verwendet, wenn es keine responses auf requests gibt
     def parse(self, response):
         items = response.xpath('//div').extract()
-        string = str(items[0])
+        #string = str(items[0])
+        try:
+            string = str(items[0])
+        except:
+            print("Information:")
+            print(items)
+
         #start und ende des relevanten strings
         #geben den index der start- und endpunkte an
         start = string.find('JSON.parse(')
@@ -69,6 +75,7 @@ class DhlSpider(scrapy.Spider):
             events=shipment_details["sendungen"][0]["sendungsdetails"]["sendungsverlauf"].get("events", [])
         )
         yield item
+
 
 
 

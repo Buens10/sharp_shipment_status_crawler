@@ -62,7 +62,7 @@ class DropIfEmptyFieldPipeline(object):
 
     def process_item(self, item, dhlSpider):
 
-        if not(all(item.values())):
+        if len(item['events'])<1:
             raise DropItem()
         else:
             return item

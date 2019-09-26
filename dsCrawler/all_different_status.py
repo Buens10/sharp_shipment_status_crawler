@@ -37,14 +37,14 @@ def cleanstatussen(res):
     s = set(cdt)
 
     cleanlist = []
-    for i in s:
-        if i is not None:
-            cleanlist.append(i)
+    for status in s:
+        if status is not None:
+            cleanlist.append(status)
 
     sortedcl = sorted(cleanlist)
 
-    for i in sortedcl:
-        print(i)
+    for status in sortedcl:
+        print(status)
         print('\n')
 
 '''

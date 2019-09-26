@@ -26,7 +26,7 @@ dhl_shipment_events = db.dhl_shipment_events
 res = dhl_shipment_events.find()
 
 
-def cleanstatussen(res):
+def cleanstatusz(res):
     t = list(map(lambda x: list(map(lambda y: y.get('status'), x.get('events'))), res))
     c = list(chain.from_iterable(t))#stati
     f = list(map(lambda x: cleanhtml(x), c))
@@ -40,9 +40,9 @@ def cleanstatussen(res):
             counts[status] = counts[status]+1
         else:
             counts[status] =1
-    print(counts)
+    #print(counts)
 
 
-cleanstatussen(res)
+cleanstatusz(res)
 
 
