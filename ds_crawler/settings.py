@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for dsCrawler project
+# Scrapy settings for ds_crawler project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'dsCrawler'
+BOT_NAME = 'ds_crawler'
 
-SPIDER_MODULES = ['dsCrawler.spiders']
-NEWSPIDER_MODULE = 'dsCrawler.spiders'
+SPIDER_MODULES = ['ds_crawler.spiders']
+NEWSPIDER_MODULE = 'ds_crawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'dsCrawler (+http://www.yourdomain.com)'
+#USER_AGENT = 'ds_crawler (+http://www.yourdomain.com)'
 
 #SCHEDULER_PRIORITY_QUEUE = 'scrapy.pqueues.DownloaderAwarePriorityQueue'
 
@@ -58,7 +58,7 @@ COOKIES_ENABLED = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
-    'dsCrawler.middlewares.DscrawlerSpiderMiddleware': 543,
+    'ds_crawler.middlewares.DscrawlerSpiderMiddleware': 543,
 }
 DOWNLOADER_MIDDLEWARES = {
     'scrapy_splash.SplashCookiesMiddleware': 723,
@@ -78,7 +78,7 @@ HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'dsCrawler.middlewares.DscrawlerDownloaderMiddleware': 543,
+    'ds_crawler.middlewares.DscrawlerDownloaderMiddleware': 543,
 }
 
 # Enable or disable extensions
@@ -90,8 +90,8 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'dsCrawler.pipelines.DhlShipmentEventsPipeline': 300,
-    'dsCrawler.pipelines.DropIfEmptyFieldPipeline': 400,
+    'ds_crawler.pipelines.DhlShipmentEventsPipeline': 300,
+    'ds_crawler.pipelines.DropIfEmptyFieldPipeline': 400,
 }
 MONGO_URI = 'mongodb://localhost:27017'
 MONGODB_HOST = "127.0.0.1"

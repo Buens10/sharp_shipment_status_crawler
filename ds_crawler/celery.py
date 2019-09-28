@@ -2,9 +2,9 @@ import os
 from celery import Celery
 
 
-os.environ.setdefault('SCRAPY_SETTINGS_MODULE', 'dsCrawler.settings')
+os.environ.setdefault('SCRAPY_SETTINGS_MODULE', 'ds_crawler.settings')
 
-app = Celery('dsCrawler')
+app = Celery('ds_crawler')
 app.config_from_object('django.conf:settings', namespace='CELERY')
 app.autodiscover_tasks()
 

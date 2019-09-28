@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy_splash import SplashRequest
-from dsCrawler.items import DhlcrawlerItem
+from ds_crawler.items import DhlcrawlerItem
 import json
 from pymongo import MongoClient
 import numpy as np

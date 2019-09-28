@@ -7,8 +7,8 @@
 from pymongo import MongoClient
 from scrapy.exceptions import DropItem
 from scrapy.conf import settings
-import dsCrawler.settings as settings
-from dsCrawler.spiders import dhlSpider
+import ds_crawler.settings as settings
+from ds_crawler.spiders import dhl_spider
 
 
 class DhlShipmentEventsPipeline(object):
@@ -27,7 +27,7 @@ class DhlShipmentEventsPipeline(object):
         return cls(
             mongo_server=crawler.settings.get('MONGODB_SERVER'),
             mongo_port=crawler.settings.get('MONGODB_PORT'),
-            mongo_db=crawler.settings.get('MONGODB_DB', 'dsCrawler'),
+            mongo_db=crawler.settings.get('MONGODB_DB', 'ds_crawler'),
             mongo_collection=crawler.settings.get('MONGODB_COLLECTION'),
         )
 
