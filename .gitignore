@@ -1,5 +1,4 @@
 venv
 mongodb
-.idea
 *.pyc
 __pycache__
