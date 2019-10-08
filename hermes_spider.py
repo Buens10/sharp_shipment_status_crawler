@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from scrapy_splash import SplashRequest
-from ds_crawler.items import HermescrawlerItem
+from scrabu.items import HermescrawlerItem
 import json
 from pymongo import MongoClient
 from scrapy.crawler import CrawlerRunner
