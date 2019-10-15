@@ -27,7 +27,7 @@ class DhlSpider(scrapy.Spider):
         number = 340434174857037035
         multiplier = [3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3]
         sh_numbers = []
-        for i in range(40000, 50000):
+        for i in range(1, 10000):
             sh_number = (number // 10) + i
             sh_number_list = list(map(int, str(sh_number)))
             m_number = np.multiply(multiplier, sh_number_list)

@@ -48,7 +48,7 @@ def cleanstatussen(res):
         print('\n')
 
 '''
-    with open('Alle_Statis.txt', 'w') as f:
+    with open(alle_statis.txt, 'w') as f:
         for i in sortedcl:
             f.write("%s\n\n" % i)
 '''
