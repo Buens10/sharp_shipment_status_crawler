@@ -1,15 +1,24 @@
-scrabu
-===========================
+# Scrabu
 
-## Requirements:
+Data-Driven Optimization of the Revisiting Policy for a Domain-Specific Crawler with Integrated Shipment Status Scraper
 
-1. Python 3
-2. Scrapy framework
-  pip install crapy
-  
-## Usage:
+## Installation
 
-1. cd < project directory >
-2. Command for running the spider: 
-  scrapy crawl < spider name >
-  
+The project is dockerized. Use the following Makefile target to build the Docker image with all required dependencies.
+Dependencies are all defined in the requirements.txt file. In case you change them, you should re-run the build command
+to update the dependencies.
+
+```bash
+make build
+```
+
+## Usage
+
+To start the Jupyter notebook server use the following command:
+
+```bash
+make up
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
