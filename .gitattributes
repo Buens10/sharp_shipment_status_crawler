@@ -1,6 +1,0 @@
-docker-compose.yml filter=lfs diff=lfs merge=lfs -text
-dsCrawler filter=lfs diff=lfs merge=lfs -text
-hermesSpider.py filter=lfs diff=lfs merge=lfs -text
-mongodb filter=lfs diff=lfs merge=lfs -text
-scrapy.cfg filter=lfs diff=lfs merge=lfs -text
-venv filter=lfs diff=lfs merge=lfs -text
