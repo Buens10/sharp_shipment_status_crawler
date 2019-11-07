@@ -13,19 +13,11 @@ from concurrent.futures import ThreadPoolExecutor as PoolExecutor
 
 # Gets or creates a logger
 logger = logging.getLogger('scrabu_app')
-
 # set log level
 logger.setLevel(logging.INFO)
 
 logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s', level=logging.INFO, datefmt='%I:%M:%S')
 
-# define file handler and set formatter
-file_handler = logging.FileHandler('__init__.py')
-formatter    = logging.Formatter('%(asctime)s : %(levelname)s : %(message)s')
-file_handler.setFormatter(formatter)
-
-# add file handler to logger
-logger.addHandler(file_handler)
 
 
 # Generate a list of shipment numbers with the check digit calculation
