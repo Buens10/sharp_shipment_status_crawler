@@ -21,7 +21,7 @@ ch = logging.StreamHandler()
 ch.setLevel(logging.INFO)
 
 # create formatter
-formatter = logging.Formatter('%(asctime)s %(levelname)s: %(message)s', level=logging.INFO, datefmt='%I:%M:%S')
+formatter = logging.Formatter('%(asctime)s %(levelname)s: %(message)s', datefmt='%I:%M:%S') # level=logging.INFO
 
 # add formatter to ch
 ch.setFormatter(formatter)
@@ -29,7 +29,7 @@ ch.setFormatter(formatter)
 # add ch to logger
 logger.addHandler(ch)
 
-logging.basicConfig(formatter)
+#logging.basicConfig(formatter)
 
 
 
@@ -83,8 +83,7 @@ def html_to_json(html):
 
 
 # Structure the shipment details in JSON format
-def shipment_details(shipment_details_json, start_url="https://www.dhl.de/int-verfolgen/search?
-                     language=de&lang=de&domain=de&piececode=", shipment_number="340434188193323500"):
+def shipment_details(shipment_details_json, start_url="https://www.dhl.de/int-verfolgen/search?language=de&lang=de&domain=de&piececode=", shipment_number="340434188193323500"):
     logger.debug("Preparing JSON for persistance")
     delivery_history_dict = {}
     delivery_history_dict["shipment_number"] = shipment_details_json["sendungen"][0]["sendungsdetails"]
@@ -115,8 +114,7 @@ def process_shipment_number(shipment_number):
                      
                      
 # Multi-threading
-def main(shipment_number=None, size=None, max_workers=None, start_url="https://www.dhl.de/int-verfolgen/search?
-         language=de&lang=de&domain=de&piececode="):
+def main(shipment_number=None, size=None, max_workers=None, start_url="https://www.dhl.de/int-verfolgen/search?language=de&lang=de&domain=de&piececode="):
     shipment_numbers = generate_shipment_numbers(shipment_number=shipment_number, size=size)
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
