@@ -86,12 +86,10 @@ def html_to_json(html):
 def shipment_details(shipment_details_json, start_url="https://www.dhl.de/int-verfolgen/search?language=de&lang=de&domain=de&piececode=", shipment_number="340434188193323500"):
     logger.debug("Preparing JSON for persistance")
     delivery_history_dict = {}
-    delivery_history_dict["shipment_number"] = shipment_details_json["sendungen"][0]["sendungsdetails"]
-    ["sendungsnummern"].get("sendungsnummer")
+    delivery_history_dict["shipment_number"] = shipment_details_json["sendungen"][0]["sendungsdetails"]["sendungsnummern"].get("sendungsnummer")
     delivery_history_dict["crawltime"] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     delivery_history_dict["url"] = start_url + str(shipment_number) 
-    delivery_history_dict["events"] = shipment_details_json["sendungen"][0]["sendungsdetails"]
-    ["sendungsverlauf"].get("events", [])
+    delivery_history_dict["events"] = shipment_details_json["sendungen"][0]["sendungsdetails"]["sendungsverlauf"].get("events", [])
     return delivery_history_dict
                      
                    
@@ -111,23 +109,3 @@ def process_shipment_number(shipment_number):
         save_dictionary(shipment_history, filename="../data/{}.json".format(shipment_number))
     else:
         logger.info("No events found for shipment number {}".format(shipment_number))
-                     
-                     
-# Multi-threading
-def main(shipment_number=None, size=None, max_workers=None, start_url="https://www.dhl.de/int-verfolgen/search?language=de&lang=de&domain=de&piececode="):
-    shipment_numbers = generate_shipment_numbers(shipment_number=shipment_number, size=size)
-    
-    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_url = {executor.submit(process_shipment_number, sn): sn for sn in shipment_numbers}
-        for future in concurrent.futures.as_completed(future_to_url):
-            url = future_to_url[future]
-            try:
-                data = future.result()
-            except Exception as exc:
-                print('%r generated an exception: %s' % (url, exc))
-         
-         
-if __name__ == '__main__': 
-         main(shipment_number=340434188193324407, size=10000, max_workers=4)
-
-
