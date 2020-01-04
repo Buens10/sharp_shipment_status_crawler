@@ -38,18 +38,18 @@ def generate_shipment_numbers(shipment_number=None, size=2): #340434188193324407
     logger.info("Generating shipment numbers with seed: {}".format(shipment_number))
     multiplier = [3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3]
     shipment_numbers_list = []
-    for i in range(0, size):
-        shipment_number = (shipment_number // 10) + 1
-        shipment_number_l = list(map(int, str(shipment_number)))
-        multiply_number = np.multiply(multiplier, shipment_number_l)
-        sum = reduce(lambda x, y: x+y, multiply_number)
-        pz = (10 - sum % 10)
-        shipment_number_l.append(0 if pz==10 else pz)
-        shipment_number = reduce(lambda x,y: x * 10 + y, shipment_number_l)
-        shipment_number_str = str(shipment_number).rjust(20, '0')
-        shipment_numbers_list.append(shipment_number_str)
-    logger.info("Generated {} unique shipment numbers".format(len(set(shipment_numbers_list))))
-    return shipment_numbers_list
+        for i in range(0, size):
+            shipment_number = (shipment_number // 10) + 1
+            shipment_number_l = list(map(int, str(shipment_number)))
+            multiply_number = np.multiply(multiplier, shipment_number_l)
+            sum = reduce(lambda x, y: x+y, multiply_number)
+            pz = (10 - sum % 10)
+            shipment_number_l.append(0 if pz==10 else pz)
+            shipment_number = reduce(lambda x,y: x * 10 + y, shipment_number_l)
+            shipment_number_str = str(shipment_number).rjust(20, '0')
+            shipment_numbers_list.append(shipment_number_str)
+        logger.info("Generated {} unique shipment numbers".format(len(set(shipment_numbers_list))))
+        return shipment_numbers_list
 
 
 # Download the HTML content for a list of shipment numbers
